@@ -1,5 +1,7 @@
 # kanban-home
 
+Vue application in multi-page mode (multi page application, MPA). 
+
 ```
 # vue create kanban-home
 
