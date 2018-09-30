@@ -1,0 +1,33 @@
+version: '3'
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
+
+volumes:
+  db-data:
+    driver: local
+
+services:
+  web:
+    image: nginx:1.14-alpine
+    ports:
+      - 80:80
+    volumes:
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./dist:/var/www/html
+    networks:
+      - frontend
+      - backend
+  front:
+    build: ./docker/node
+    volumes:
+      - .:/app
+    ports:
+      - 8080:8080
+    tty: true
+    networks:
+      - frontend
+      - backend
