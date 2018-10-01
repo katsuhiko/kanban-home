@@ -5,8 +5,8 @@
       <router-link to="/home">Home</router-link> |
       <router-link to="/about">About</router-link>
       -->
-      <a href="/pages/home">Home</a> |
-      <a href="/pages/about">About</a>
+      <a href="/home">Home</a> |
+      <a href="/about">About</a>
     </div>
     <router-view/>
   </div>

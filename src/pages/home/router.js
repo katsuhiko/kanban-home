@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/home/Home.vue'
-import Home2 from '@/views/home/Home2.vue'
+import TodoView from '@/views/home/TodoView.vue'
 
 Vue.use(Router)
 
@@ -15,9 +15,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/home/2',
-      name: 'home2',
-      component: Home2
+      path: '/home/:todoId',
+      name: 'todo-view',
+      component: TodoView
     }
   ]
 })

@@ -1,6 +1,6 @@
 module.exports = {
-  baseUrl: '/pages/',
-  outputDir: 'dist/pages',
+  //baseUrl: '/pages/',
+  //outputDir: 'dist/pages',
   pages: {
     home: {
       entry: 'src/pages/home/main.js',

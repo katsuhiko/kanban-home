@@ -1,20 +1,25 @@
 <template>
   <div class="home">
-    <router-link to="/home">Home</router-link> |
-    <router-link to="/home/2">Home2</router-link>
+    <div>
+      <router-link to="/home">Home</router-link> |
+      <router-link to="/home/2">Home2</router-link>
+    </div>
+    <!--
     <img alt="Vue logo" src="@/assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    -->
+
+    <TodoList msg="Task List(Vue.js)"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import TodoList from '@/components/TodoList.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    TodoList
   }
 }
 </script>
